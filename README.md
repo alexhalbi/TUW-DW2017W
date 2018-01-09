@@ -1,3 +1,5 @@
+
+# LaTeX Template
 Verbesserte Vorlage für Denkweisen, welche das anonymisierte erstellen eines PDFs erleichtert.
 
 Weiters müssen noch die Dateien ``Second.tex,Third.tex,...`` erstellt werden wie ``First.tex`` für die einzelnen Arbeiten der Verfassenden.
@@ -12,3 +14,7 @@ ausgeführt werden. (Das ``.tco`` Profil beinhaltet die Referenz für Adobe Acro
 Mit diesem Command in TeXnicCenter im "Ausgabeprofil" im Tab "Viewer" unter "Projektausgabe betrachten" und "Suche in Ausgabe" *zusätzlich* wird auch das Anonyme PDF in Acrobat geöffnet.
 
     [DocOpen("%dm\BUG-Anonymous.pdf")][FileOpen("%dm\BUG-Anonymous.pdf")]
+
+	
+# Disclaimer
+*Es wird keine Garantie von mir übernommen, dass alle Metadaten hiermit entfernt werden!*
