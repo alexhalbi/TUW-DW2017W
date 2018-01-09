@@ -1,0 +1,121 @@
+\ifdefined\anonymus %do not set Authors if anonymus!
+	\def\jobname{BUG-Anonymous}
+\else
+	\def\jobname{BUG}
+\fi
+
+\documentclass{chi-ext}
+
+
+\title{Beyond Uninvited Guest}
+
+\numberofauthors{3}
+\author{
+	\ifdefined\anonymous\else %do not set Authors if anonymus!
+		\alignauthor{
+			\textbf{First}\\
+			\affaddr{Matrikelnummer}\\
+			\email{author1@student.tuwien.ac.at}
+		} \vfil
+		\alignauthor{
+			\textbf{Second}\\
+			\affaddr{Matrikelnummer}\\
+			\email{author2@student.tuwien.ac.at}
+		} \vfil
+		\alignauthor{
+			\textbf{Third}\\
+			\affaddr{Matrikelnummer}\\
+			\email{author3@student.tuwien.ac.at} \\
+		}
+	\fi
+}
+
+\def\plaintitle{Denkweisen der Informatik}
+\ifdefined\anonymus %do not set Authors if anonymus!
+	\def\plainauthor{Anonymous}
+\else %do not set Authors if anonymus!
+	\def\plainauthor{First, Second, Third Author}
+\fi
+\def\plainkeywords{Denkweisen}
+\def\plaingeneralterms{Abgabe}
+
+
+\hypersetup{
+	% Your metadata go here
+	pdftitle={\plaintitle},	
+	pdfauthor={\plainauthor},
+	pdfkeywords={\plainkeywords},
+	pdfsubject={\plaingeneralterms}
+}
+
+\usepackage{graphicx}   % for EPS use the graphics package instead
+\usepackage{balance}    % useful for balancing the last columns
+\usepackage{bibspacing} % save vertical space in references
+\usepackage[utf8]{inputenc}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    Eine Zusammenfassung des Papers (150 Wörter)
+    
+\end{abstract}
+
+\keywords{\plainkeywords}
+
+\category{H.5.m}{Information interfaces and presentation (e.g., HCI)}{Miscellaneous}. 
+
+\terms{\plaingeneralterms}
+
+% =============================================================================
+\section{Introduction}
+% =============================================================================
+
+Gemeinsame Einleitung 
+
+
+
+% =============================================================================
+%\section{Denkweise 1} -- Section Titel in Sub-tex File! First.tex
+% =============================================================================
+
+\include{First}
+
+% =============================================================================
+%\section{Denkweise 2} -- Section Titel in Sub-tex File! Second.tex
+% =============================================================================
+
+\include{Second} 
+
+% =============================================================================
+%\section{Denkweise 3} -- Section Titel in Sub-tex File! Third.tex
+% =============================================================================
+
+\include{Third}
+
+% =============================================================================
+\section{Diskussion}
+% =============================================================================
+
+Welche Querverbindungen, Gemeinsamkeiten, Spannungsfelder, Widersprüche, Konflikte etc. sehen sie zwischen den unterschiedlichen Herangehensweisen? 
+
+Wie würden sie dieser Verbindungen bewerten oder priorisieren? 
+
+Wie könnten diese Denkweisen ineinander greifen um die Probleme in ``Uninvited Guest'' zu lösen? 
+
+% =============================================================================
+\section{Ausblick}
+% =============================================================================
+
+Wenn sie damit beauftragt wären die Technologien in `Uninvited Guest'' zu verbessern, wie würden sie das konkret angehen? 
+
+Welche Studien würden sie machen, was würden sie entwickeln, was würden sie wie testen? 
+
+
+\balance
+\bibliographystyle{acm-sigchi}
+\bibliography{sample}
+
+\end{document}
