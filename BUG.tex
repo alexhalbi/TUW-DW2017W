@@ -1,4 +1,4 @@
-\ifdefined\anonymus %do not set Authors if anonymus!
+\ifdefined\anonymous %do not set Authors if anonymous!
 	\def\jobname{BUG-Anonymous}
 \else
 	\def\jobname{BUG}
@@ -11,7 +11,7 @@
 
 \numberofauthors{3}
 \author{
-	\ifdefined\anonymous\else %do not set Authors if anonymus!
+	\ifdefined\anonymous\else %do not set Authors if anonymous!
 		\alignauthor{
 			\textbf{First}\\
 			\affaddr{Matrikelnummer}\\
@@ -31,9 +31,9 @@
 }
 
 \def\plaintitle{Denkweisen der Informatik}
-\ifdefined\anonymus %do not set Authors if anonymus!
+\ifdefined\anonymous %do not set Authors if anonymous!
 	\def\plainauthor{Anonymous}
-\else %do not set Authors if anonymus!
+\else %do not set Authors if anonymous!
 	\def\plainauthor{First, Second, Third Author}
 \fi
 \def\plainkeywords{Denkweisen}
